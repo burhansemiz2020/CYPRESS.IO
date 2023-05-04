@@ -1,5 +1,5 @@
 describe('Basic commands', () => {
-    it.only('Basic commands cy.visit using', () => {
+    it('Basic commands cy.visit using', () => {
         cy.visit("/")//base url configde tanimlandiysa
         cy.visit("/commands")//base url tanimlandiysa configde tanimlandiysa. 
         //eger command a gidilecekse slashtan sonrasina command yazilir
@@ -43,6 +43,8 @@ describe('Basic commands', () => {
         cy.log('Bir mesaj',['bir mesaj', 'iki mesaj', 'uc mesaj'])//output: Bir mesaj, [bir mesaj, iki mesaj, uc mesaj] 
     });
 
-    
+    //describe.skip dersek testlerimizin o bolumu pass gecilir
+    //it.skip yaparsak bu kisim pass gecilir
+    //it.only yazarsak sadece bu kisim calisir
     
 });
